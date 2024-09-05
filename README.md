@@ -6,7 +6,7 @@ supported (using debootstrap behind the scenes), but "Chromium OS Debian,
 Ubuntu, and Probably Other Distros Eventually Chroot Environment" doesn't
 acronymize as well (crodupodece is admittedly pretty fun to say, though).
 
-Downloads the file (4kb) [here](https://drive.usercontent.google.com/u/0/uc?id=1fENiqwNewyNm40NKo7VfaU0K7_xOnmRB&export=download)
+Downloadthe file (4kb) [here](https://drive.usercontent.google.com/u/0/uc?id=1fENiqwNewyNm40NKo7VfaU0K7_xOnmRB&export=download)
 ### crouton is now maintenance-only
 
 This means that:
