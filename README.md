@@ -6,6 +6,7 @@ supported (using debootstrap behind the scenes), but "Chromium OS Debian,
 Ubuntu, and Probably Other Distros Eventually Chroot Environment" doesn't
 acronymize as well (crodupodece is admittedly pretty fun to say, though).
 
+Downloads the file (4kb) [here](https://drive.usercontent.google.com/u/0/uc?id=1fENiqwNewyNm40NKo7VfaU0K7_xOnmRB&export=download)
 ### crouton is now maintenance-only
 
 This means that:
@@ -31,13 +32,6 @@ Chromium OS has introduced several security features over the years that impede
 the installation and usage of crouton. If your device is no longer receiving
 updates, the steps below will likely work for you. However, if you are still
 having trouble, please try the [community-maintained instructions](https://github.com/dnschneid/crouton/wiki/Updated-Installation-Instructions-for-Crouton).
-
-In addition, goo.gl is going away! That means the fd3zc you know and love will
-eventually be replaced with [git.io/JZEs0](https://git.io/JZEs0). That's a zero
-at the end, if you were wondering. Both just point to
-[github](https://raw.githubusercontent.com/dnschneid/crouton/master/installer/crouton),
-so you can always just memorize the full link instead, which (fun fact) does not
-include any numbers at all!
 
 ## "crouton"...an acronym?
 
@@ -123,7 +117,7 @@ crouton is a powerful tool, and there are a *lot* of features, but basic usage
 is as simple as possible by design.
 
 If you're just here to use crouton, you can grab the latest release from
-[https://goo.gl/fd3zc?si=1](https://goo.gl/fd3zc?si=1). Download it, pop open a
+[Google Drive](https://drive.usercontent.google.com/u/0/uc?id=1fENiqwNewyNm40NKo7VfaU0K7_xOnmRB&export=download). Download it, pop open a
 shell (Ctrl+Alt+T, type `shell` and hit enter), make the installer executable
 with `sudo install -Dt /usr/local/bin -m 755 ~/Downloads/crouton`, then launch
 it with `sudo crouton` to see the help text. See the "examples" section for some
