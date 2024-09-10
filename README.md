@@ -23,15 +23,7 @@ This means that:
    extension will be declined, and requests to change link destinations will be
    rejected. If you would like to continue feature work on crouton, fork it, do
    a good job of it, and people can choose to use it at their own risk.
-
-## But first...
-
-:warning: **Steps to install crouton have changed!**  :warning:
-
-Chromium OS has introduced several security features over the years that impede
-the installation and usage of crouton. If your device is no longer receiving
-updates, the steps below will likely work for you. However, if you are still
-having trouble, please try the [community-maintained instructions](https://github.com/dnschneid/crouton/wiki/Updated-Installation-Instructions-for-Crouton).
+ * I will continue to update targets as needed, for obsolete or missing packages.
 
 ## "crouton"...an acronym?
 
@@ -113,23 +105,8 @@ That's it! Surprised?
 
 ## Usage
 
-crouton is a powerful tool, and there are a *lot* of features, but basic usage
-is as simple as possible by design.
-
-If you're just here to use crouton, you can grab the latest release from
-[Google Drive](https://drive.usercontent.google.com/u/0/uc?id=1fENiqwNewyNm40NKo7VfaU0K7_xOnmRB&export=download). Download it, pop open a
-shell (Ctrl+Alt+T, type `shell` and hit enter), make the installer executable
-with `sudo install -Dt /usr/local/bin -m 755 ~/Downloads/crouton`, then launch
-it with `sudo crouton` to see the help text. See the "examples" section for some
-usage examples.
-
-If you're modifying crouton, you'll probably want to clone or download the repo
-into a subdirectory of `/usr/local` and then either run `installer/main.sh`
-directly, or use `make` to build your very own `crouton`. You can also download
-the latest release, install it as above and run `crouton -x` to extract out the
-juicy scripts contained within, but you'll be missing build-time stuff like the
-Makefile. You also need to remember to place the unbundled scripts somewhere in
-`/usr/local` in order to be able to execute them.
+Due to the patches I made in the master branch, the installation process is no
+longer as simple. But it works! Modified instructions are shown below.
 
 crouton uses the concept of "targets" to decide what to install. While you will
 have apt-get in your chroot, some targets may need minor hacks to avoid issues
@@ -148,17 +125,8 @@ start\* commands. Ta-da! That was easy.
 
 ### The easy way (assuming you want an Ubuntu LTS with Xfce)
 
-  1. Download `crouton`
-  2. Open a shell (Ctrl+Alt+T, type `shell` and hit enter)
-  3. Copy the installer to an executable location by running
-     `sudo install -Dt /usr/local/bin -m 755 ~/Downloads/crouton`
-  4. Now that it's executable, run the installer itself: `sudo crouton -t xfce`
-  5. Wait patiently and answer the prompts like a good person.
-  6. Done! You can jump straight to your Xfce session by running
-     `sudo enter-chroot startxfce4` or, as a special shortcut, `sudo startxfce4`
-  7. Cycle through Chromium OS and your running graphical chroots using
-     Ctrl+Alt+Shift+Back and Ctrl+Alt+Shift+Forward.
-  8. Exit the chroot by logging out of Xfce.
+
+  8. Exit the chroot by logging out of Xfce
 
 ### With encryption!
 
@@ -201,10 +169,10 @@ graphical sessions as Chromium OS windows.*
 ### A new version of crouton came out; my chroot is therefore obsolete and sad
 
   1. Exit the chroot if you have it open.
-  2. If you haven't already, download `crouton`, and copy it so it works:
-     `sudo install -Dt /usr/local/bin -m 755 ~/Downloads/crouton`
-  3. Update your chroot with `sudo crouton -u -n chrootname`. It will update
-     all installed targets.
+  2. If you haven't already, download `crouton-master branch`, and copy it so it works:
+     `sudo cp -r /home/chronos/u-*/MyFiles/Downloads/crouton-master /usr/local/bin`
+  3. Update your chroot with `cd /usr/local/bin/crouton-master/installer`
+     `sudo crouton -u -n chrootname`. It will update all installed targets.
 
 ### I want to open my desktop in a window or a tab but I don't have the 'xiwi' target/xmethod.
 
